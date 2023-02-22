@@ -1,0 +1,220 @@
+
+.principalHome{
+  display: grid;
+ grid-template-rows: auto auto auto;
+}
+.principalDiv{
+    height: 100vh;
+    
+}
+.InfoAndImageContainer{
+  z-index: 2 ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 100px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+}
+.hello{
+  z-index: 2 ;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-start;
+  margin-right: 30px;
+  width: 800px;
+}
+.hello p{
+  width: 100%;
+  text-align: start;
+  font-size: 20px;
+  color:  var(--color-primario);
+  text-align: justify;
+}
+.hello h1{
+  width: 100%;
+  text-align: start;
+  font-size: 50px;
+  margin-bottom: 2px;
+  margin-top: 100px;
+  color:  var(--color-primario);
+}
+.hello h2{
+  width: 100%;
+  text-align: start;
+  font-size: 35px;
+  margin-top: 2px;
+  color:  var(--color-primario);
+}
+.downloadButton{
+  width: 180px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  background: #1F2044;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.75px;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 30px;
+}
+.downloadButton:hover{
+  background: #ffb400;
+  color: #e5e5e5;
+}
+.iconDownLoad{
+  color: white;
+
+}
+.bannerImg{
+  width: 550px;
+  height: 680px;
+  border-radius: 70px;
+  
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.girarContainer1{
+  width: 25%;
+  height: 80%;
+}
+.girar {
+    /* Establecer un tamaño y posición para el div */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 100%;
+    
+    /* Añadir la animación y la transformación */
+    animation: girarInfinitamente 15s linear infinite;
+    transform-origin: center;
+  }
+  
+  /* Definir la animación */
+  @keyframes girarInfinitamente {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .girar span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: green;
+    border-radius: 100%;
+  }
+
+  .girar span:nth-child(3n+1):before {
+    background: rgb(134, 255, 0);
+    box-shadow: 0 0 2rem rgb(134, 255, 0), 0 0 2rem rgb(134, 255, 0), 0 0 3rem rgb(134, 255, 0), 0 0 4rem rgb(134, 255, 0), 0 0 0 0.4rem rgba(134, 255, 0, 0.1);
+  }
+
+
+
+  .girarIzq {
+    /* Establecer un tamaño y posición para el div */
+    width: 150px;
+    height: 200px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    
+    /* Añadir la animación y la transformación */
+    animation: girarInfinitamenteizq 20s linear infinite;
+    transform-origin: center;
+  }
+  
+  /* Definir la animación */
+  @keyframes girarInfinitamenteizq {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .girarIzq span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: green;
+    border-radius: 100%;
+  }
+
+  .girarIzq  span:nth-child(3n+1):before {
+    background: rgb(255, 255, 0);
+    box-shadow: 0 0 1rem rgb(255, 255, 0), 0 0 2rem rgb(255, 255, 0), 0 0 3rem rgb(255, 255, 0), 0 0 4rem rgb(255, 255, 0), 0 0 0 0.4rem rgba(255, 255, 0, 0.1);
+   }
+
+
+   .girarDer {
+    /* Establecer un tamaño y posición para el div */
+    width: 300px;
+    height: 200px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 100%;
+    
+    /* Añadir la animación y la transformación */
+    animation: girarInfinitamente 50s linear infinite;
+    transform-origin: center;
+  }
+  
+  /* Definir la animación */
+  @keyframes girarInfinitamente {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .girarDer span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: green;
+    border-radius: 100%;
+  }
+
+  .girarDer span:nth-child(3n+1):before {
+    background: rgb(38, 87, 54);
+    box-shadow: 0 0 1rem rgb(38, 87, 54), 0 0 2rem rgb(38, 87, 54), 0 0 3rem rgb(38, 87, 54), 0 0 4rem rgb(38, 87, 54), 0 0 0 0.4rem rgba(38, 87, 54, 0.1);
+  
+  }
+
+  
+
+  
