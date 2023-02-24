@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
 
+.headerArea {
+    position: fixed;
+  
+    z-index: 30;
+}
 .header{
     position: fixed;
-    width: 100%;
+    width: 98%;
     height: 7vh;
     display: flex;
     flex-direction: row;
@@ -26,6 +31,7 @@
     width: 100%;
     height: 52px;
     display: flex;
+    top: 0px;
     flex-direction: row;
     align-items: center;
     box-shadow: 0 0 0.6rem var(--color-primario);}
@@ -37,11 +43,7 @@
     font-weight: 600;
     cursor: pointer;
 }
-@media (max-width: 768px) {
-    .headerFixed {
-     position: sticky;
-    }
-  }
+
 .navName{
     font-size: 2.5rem;
     font-family: "Saira Stencil One", cursive;
