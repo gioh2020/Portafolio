@@ -19,6 +19,16 @@
   width: 100%;
 
 }
+@media (max-width: 768px) {
+  .InfoAndImageContainer {
+    width: 93vh;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 90%;
+    top: 10px;
+  }
+}
+
 .hello{
   z-index: 2 ;
   display: flex;
@@ -28,12 +38,27 @@
   margin-right: 30px;
   width: 800px;
 }
+@media (max-width: 768px) {
+  .hello{
+    padding: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+}
 .hello p{
   width: 100%;
   text-align: start;
   font-size: 20px;
   color:  var(--color-primario);
   text-align: justify;
+}
+@media (max-width: 768px) {
+  .hello p {
+    font-size: 15px;
+    width: 100%;
+    height: 40%;
+    margin: 2px 0px 2px 0px;
+  }
 }
 .hello h1{
   width: 100%;
@@ -43,12 +68,24 @@
   margin-top: 100px;
   color:  var(--color-primario);
 }
+@media (max-width: 768px) {
+  .hello h1 {
+    margin-top: 2px;
+    font-size: 30px;
+  }
+}
 .hello h2{
   width: 100%;
   text-align: start;
   font-size: 35px;
   margin-top: 2px;
   color:  var(--color-primario);
+}
+@media (max-width: 768px) {
+  .hello h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
 }
 .downloadButton{
   width: 180px;
@@ -65,6 +102,11 @@
   color: white;
   margin-top: 30px;
 }
+@media (max-width: 768px) {
+  .downloadButton  {
+ margin-top: 20px;
+  }
+}
 .downloadButton:hover{
   background: #ffb400;
   color: #e5e5e5;
@@ -79,6 +121,13 @@
   border-radius: 70px;
   
 }
+@media (max-width: 768px) {
+  .bannerImg  {
+    width: 300px;
+  height: 300px; 
+ 
+  }
+}
 .home{
     display: flex;
     flex-direction: row;
@@ -87,9 +136,27 @@
     justify-content: center;
     width: 100%;
 }
+@media (max-width: 768px) {
+  .home  {
+   flex-wrap: nowrap;
+   flex-direction: column;
+  }
+}
 .girarContainer1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 25%;
   height: 80%;
+}
+@media (max-width: 768px) {
+  .girarContainer1  {
+  width: 100%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
 }
 .girar {
     /* Establecer un tamaño y posición para el div */
@@ -105,6 +172,13 @@
     animation: girarInfinitamente 15s linear infinite;
     transform-origin: center;
   }
+  @media (max-width: 768px) {
+    .girar  {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
   
   /* Definir la animación */
   @keyframes girarInfinitamente {
@@ -145,6 +219,12 @@
     /* Añadir la animación y la transformación */
     animation: girarInfinitamenteizq 20s linear infinite;
     transform-origin: center;
+  }
+  @media (max-width: 768px) {
+    .girarIzq  {
+      width: 100px;
+      height: 100px;
+    }
   }
   
   /* Definir la animación */
@@ -187,6 +267,12 @@
     /* Añadir la animación y la transformación */
     animation: girarInfinitamente 50s linear infinite;
     transform-origin: center;
+  }
+  @media (max-width: 768px) {
+    .girarDer  {
+      width: 100px;
+      height: 100px;
+    }
   }
   
   /* Definir la animación */

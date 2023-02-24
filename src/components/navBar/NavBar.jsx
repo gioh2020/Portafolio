@@ -46,7 +46,7 @@ function NavBar(props){
                         <a href="" onClick={props.handleClick} value="home" className={styles.navName}>
                         <span>Gio</span>-H
                         </a>
-                        <div>
+                        <div className={styles.buttonConatainer}>
                         <button
                         onClick={props.handleClick}
                         value='about'

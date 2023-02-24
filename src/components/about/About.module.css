@@ -61,6 +61,11 @@
    
     width: 100%;
 }
+@media (max-width: 768px) {
+    .imgInfoContainer{
+        flex-direction: column;
+    }
+  }
 .img {
     box-shadow: 0 0 2rem rgb(110, 110, 110);
     background-color: rgb(240, 243, 246);
@@ -69,6 +74,13 @@
     margin-left: 60px;
     border-radius: 70px;
 }
+
+@media (max-width: 768px) {
+    .img{
+        height: 300px;
+        width: 300px;
+    }
+  }
 .info{
     display: flex;
     flex-direction: column;
