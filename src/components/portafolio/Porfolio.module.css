@@ -32,6 +32,12 @@
     font-size: 2.5rem;
     margin-bottom: 5px;
 }
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 2rem;
+      
+    }
+  }
 .title h1 span{
     color: #ffb400;;
 }

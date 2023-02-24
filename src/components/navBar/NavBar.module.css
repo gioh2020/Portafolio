@@ -24,6 +24,12 @@
     font-weight: 600;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    .header button{
+    margin-left: 10px;
+    }
+  }
+
 
 .headerFixed{
     position: fixed;
