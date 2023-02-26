@@ -1,18 +1,31 @@
 .principalContainer{
+  position: relative;
     display: flex;
     width: 100%;
-    height: 100vh;
-
-    
+    height: 100vh;  
+    background-color: rgb(240, 243, 246); 
+    z-index: 3;
 }
+@media (max-width: 600px) {
+    .principalContainer {
+      height:105vh ;
+      
+    }
+  }
 .principalDiv{
     height: 93vh;
     background-color: rgb(240, 243, 246);
-    margin-top: 7vh;
+    margin-top: 43px;
     position: absolute;
     width: 100%;
-   
+    z-index: 3;
 }
+@media (max-width: 600px) {
+    .principalDiv {
+      height:105vh ;
+      margin-top: 53px;
+    }
+  }
 .title{
     display: flex;
     flex-direction: column;
@@ -20,13 +33,16 @@
     position: relative;
     top: -10px;
     width: 100%;
+  
     align-items: center;
+    z-index: 1;
     
 }
 
 .title h1{
     font-size: 2.5rem;
     margin-bottom: 5px;
+    z-index: 3;
 }
 @media (max-width: 768px) {
     .title h1 {
@@ -36,6 +52,7 @@
   }
 .title h1 span{
     color: #ffb400;
+    z-index: 3;
 }
 .figureContainer{
     display: flex;
@@ -152,7 +169,7 @@
 }  
 .info hr{
     /* border-top: solid  red; */
-    width: 100%;
+    width: 99%;
 } 
 
 .infoContainer{
