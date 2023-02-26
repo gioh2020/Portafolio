@@ -88,8 +88,11 @@
 @media (max-width: 768px) {
     .imgInfoContainer{
         flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
     }
   }
+  
 .img {
     box-shadow: 0 0 2rem rgb(110, 110, 110);
     background-color: rgb(240, 243, 246);
@@ -106,6 +109,12 @@
         margin-left: 0px;
     }
   }
+  @media (max-height: 668px) {
+    .img {
+      display: none;
+      
+    }
+  }
 .info{
     display: flex;
     flex-direction: column;
@@ -119,10 +128,11 @@
 }
 @media (max-width: 768px) {
     .info{
-        margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
-    padding: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 98%;
+      padding: 0px;
+      justify-content: flex-start;
     }
   }
 .info h1{
@@ -131,13 +141,20 @@
 }
 @media (max-width: 768px) {
     .info h1{
-        font-size: 1.5rem; 
+        font-size: 1.3rem; 
+        align-self: center;
     }
   }
 .info h3{
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 1.3rem; 
+}
+@media (max-width: 768px) {
+  .info h3{
+      font-size: 1.1rem; 
+      
+  }
 }
 .info p{
     text-align: start;
@@ -146,13 +163,11 @@
 }
 @media (max-width: 768px) {
     .info p{
-        font-size: 12px; 
+        font-size: 15px; 
         text-align: justify;
-        padding: 2px;
-        margin-top: 7px;
-        width: 98%;
-
-      
+        margin-top: 5px;
+        margin-bottom: 2px;
+        width: 98%; 
     }
   }
 .info h3 span{
