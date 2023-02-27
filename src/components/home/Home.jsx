@@ -25,21 +25,15 @@ function Home() {
   };
 
   const handleClick = (event) => {
-    
-
-    if(event.target.value === 'about'){ scrollToRef(about)}
-    
-   
-
+    scrollToRef(about)
   }
   
   const handleClickPor = (event) => {
-    console.log(event.target.value)
+    scrollToRef(port)
+  }
 
- 
-    if(event.target.value === 'portfolio'){ scrollToRef(port)}
-   
-
+  const handleClickHome = (event) => {
+   scrollToRef(home)
   }
   
 
@@ -47,7 +41,7 @@ function Home() {
     <div className={styles.principalHome}>
       <section ref={home}>
         <div className={styles.principalDiv}>
-          <NavBar handleClick={handleClick} handleClickPor={handleClickPor}/>
+          <NavBar handleClick={handleClick} handleClickPor={handleClickPor} handleClickHome={handleClickHome}/>
             <div className={styles.home}>
             
             <div className={styles.InfoAndImageContainer}>
