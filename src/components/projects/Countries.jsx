@@ -55,7 +55,10 @@ function Countries(props) {
             </div>
 
             <p>Proyecto individual, La página web proporciona información detallada sobre todos los países del mundo, incluyendo datos como la población, idioma y capital. También puedes crear actividades para cada país y muestra la hora actual en cada uno. En resumen, es una herramienta útil para aprender sobre diferentes culturas ver que actividades puedes encontrar si quieres viajar a ese pais.</p>
+           <div className={styles.ybContainer}>
+
             <ReactPlayer width='96%' height='95%' className={styles.youtube} url='https://www.youtube.com/watch?v=_WS3rRnTMQQ&ab_channel=GiovanyVasquez' />
+           </div>
 
             <div className={styles.tecnologiesDic}>
                 <h1>Tecnol<span>ogias</span></h1>
