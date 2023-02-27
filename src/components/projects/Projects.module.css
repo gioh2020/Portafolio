@@ -3,15 +3,14 @@
   position: fixed;
   top: 7vh;
   left: 3%;
- 
- justify-items: center;
- align-items: center;
- height: 85vh;
- width: 100%;
- z-index: 30;
- background-color:#1F2044;
- border-radius: 15px;
- border: solid red 3px;
+  justify-items: center;
+  align-items: center;
+  height: 90%;
+  width: 93%;
+  z-index: 30;
+  background-color:#1F2044;
+  border-radius: 15px;
+  border: solid red 3px;
 
 }
 @media (max-width: 798px) {
@@ -27,42 +26,34 @@
   flex-direction: column;
   overflow-y: scroll;
   left: 0px;
-  justify-items: start;
- align-items: start;
+  align-items: center;
   
   }
 }
 .popUp{
   background-color: var(--color-primario);
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  /* top: 8%; */
-  /* left: 1.3%; */
-  padding: 30px;
-  height: 85%;
-  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* padding: 30px; */
   display: grid;
   grid-template-columns: 50%  40%;
   grid-template-rows: 50% 20% 30%;
   justify-content: center;
   align-items: center;
   z-index: 30;
-
- 
+  border-radius: 15px;
 }
 @media (max-width: 798px) {
   .popUp {
   position: relative;  
-  top: 10px;
-  /* margin-top: 33px; */
   height: 190vh;
   width: 98%;
   padding: 0px;
   z-index: 50;
   display: flex;
   flex-direction: column;
-  /* overflow: auto; */
+  
   left: 0px;
  
   
@@ -75,11 +66,13 @@
  grid-column: 2;
  justify-self: start;
  align-self: start;
- width: 95%;
+ width: 99%;
 }
 @media (max-width: 798px) {
   .popUp p {
     font-size: 13px;
+    margin-top: 30px;
+    
 
   }
 }
@@ -105,8 +98,8 @@
   align-self: start;
   width: 30px;
   position: relative;
-  left: 80px;
-  top: -10px;
+  left: 63px;
+  top: 3px;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -116,8 +109,18 @@
   border: none;
   font-size: 20px;
   text-decoration: none;
-  color: white;
-  
+  color: white; 
+}
+@media (max-width: 798px) {
+  .closeButton {
+   position: sticky;
+   left: 0px;
+   top: 0px;
+   z-index: 9900;
+   align-self: center;
+
+
+  }
 }
 .closeButton:hover{
   background: #ffb400;
@@ -136,7 +139,8 @@
 }
 @media (max-width: 798px) {
   .imgContainer {
-   width: 98%;
+    margin-top: 5px;
+   width: 100%;
    height: 250px;
    
 
