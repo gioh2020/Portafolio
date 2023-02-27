@@ -54,6 +54,7 @@ function WwWhere(props) {
                 </div>
 
             </div>
+            
 
             <p>Proyecto grupal, wwWHere es una plataforma en línea que te ayuda a encontrar bares, pubs y restaurantes, hacer reservas y pagar desde la plataforma. Los propietarios de los establecimientos también pueden crear y editar la información de sus negocios, así como ver las reservas realizadas por otros usuarios. Además, puedes logearte con tu cuenta de Google para acceder más fácilmente a las funciones de la plataforma.</p>
             <ReactPlayer width='98%' height='100%' className={styles.youtube} url='https://www.youtube.com/watch?v=tj72TZ_OdH0&ab_channel=SolGomezEstevez' />
