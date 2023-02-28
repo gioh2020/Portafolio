@@ -8,6 +8,7 @@ import{ BiDownload }from 'react-icons/bi';
 import Portfolio from "../portafolio/Portafolio";
 
 
+
 function Home() {
 
   const about = useRef(null);
