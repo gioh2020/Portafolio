@@ -76,14 +76,14 @@ function NavBar(props){
             {showMenu? 
               <div className={styles.submenu}>
                 <div className={styles.containerSubmenuButtons}>
-                  <button onClick={props.handleClickHome}
+                  <button onClick={() => {props.handleClickHome(); handleMenu();}}
                   >Home</button>
                   <button
-                  onClick={props.handleClick}
+                   onClick={() => {props.handleClick(); handleMenu();}}
                   value='about'
                   >Sobre mí</button>
                   <button
-                  onClick={props.handleClickPor}
+                   onClick={() => {props.handleClickPor(); handleMenu();}}
                   value='portfolio'
                   >Portafolio</button>
                 </div>
