@@ -23,7 +23,7 @@
 @media (max-width: 600px) {
     .principalDiv {
       height:105vh ;
-      margin-top: 53px;
+      margin-top: 40px;
     }
   }
 .title{
@@ -104,8 +104,8 @@
 
 @media (max-width: 768px) {
     .img{
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
         margin-left: 0px;
     }
   }
@@ -153,6 +153,7 @@
 @media (max-width: 768px) {
   .info h3{
       font-size: 1.1rem; 
+      margin-bottom: 2px;
       
   }
 }
@@ -163,7 +164,7 @@
 }
 @media (max-width: 768px) {
     .info p{
-        font-size: 15px; 
+        font-size: 14px; 
         text-align: justify;
         margin-top: 5px;
         margin-bottom: 2px;
@@ -201,7 +202,7 @@
   }
 
 .infoContainer h4 {
-    margin: 5px;
+    margin: 3px;
     color: gray;
 
 }
@@ -237,4 +238,11 @@
   .downloadButton:hover{
     background: #ffb400;
     color: #e5e5e5;
+  }
+
+  @media (max-width: 768px) {
+    .downloadButton  {
+     align-self: flex-start;
+     margin-top: 7px;
+    }
   }

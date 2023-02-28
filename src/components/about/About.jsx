@@ -26,7 +26,23 @@ function About() {
                 <div className={styles.info}>
                     <h1>Soy Nelson Giovanny Vasquez Blanco </h1>
                     <h3> Profesional  <span>Full Stack Developer</span>  e <span> Ingeniero Mecánico</span> </h3>
-                    <p>Estoy construyendo mi rascacielos como desarrollador, ya que esta rama me cautivó y quiero seguir en este camino donde cada día aprendo algo nuevo. ¡esto es emocionante! Echa un vistazo a mi portafolio</p>
+                    <p>Soy un desarrollador con conocimientos
+                        en tecnologías como JavaScript, Postgres,
+                        Express, React, NodeJS, Redux, HTML y CSS.
+                        Durante los últimos años he realizado cursos de
+                        desarrollo web y me encuentro aprendiendo un
+                        segundo idioma (ingles).
+                        Durante los últimos 5 años he ejercido cargos
+                        como ingeniero mecánico, donde he adquirido soft
+                        skills como: aprendizaje activo, trabajo en equipo,
+                        liderazgo, habilidades analíticas, orientación a
+                        resultados, entre otras.
+                        El desarrollo es un gran aliado para adquirir
+                        nuevos conocimientos y desafiar constantemente
+                        mi intelecto, esta es una de las cosas que me
+                        encanta y por esta razón empecé a construir un
+                        rascacielos en torno al desarrollo.
+                    </p>
                     <hr />
                     <h2>Informacion Personal</h2>
                     <div className={styles.infoContainer}>
