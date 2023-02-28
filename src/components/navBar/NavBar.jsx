@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import styles from "./NavBar.module.css"
-import { FaLinkedinIn, FaGithub, FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaWhatsapp, FaPhoneAlt, FaInstagram } from 'react-icons/fa';
 
 
 
@@ -40,6 +40,7 @@ function NavBar(props){
                             <a target="_blank" href="https://www.linkedin.com/in/ngvb/" className={styles.liDiv}><FaLinkedinIn className={styles.iconLinkedin}/></a> 
                             <a target="_blank" href="https://github.com/gioh2020" className={styles.liDiv}><FaGithub className={styles.gitHub}/></a>
                             <a target="_blank" href="https://api.whatsapp.com/send?phone=%2B573016444226&text=" className={styles.liDiv}> <FaWhatsapp className={styles.whatsapp}/></a>           
+                            <a target="_blank" href="https://www.instagram.com/gi0h/" className={styles.liDiv}> <FaInstagram className={styles.whatsapp}/></a>
                         </div>
                         <div className={styles.divPhone}>
                             <a href="tel:+573016444226"><FaPhoneAlt className={styles.iconPhone}/> (+57) 301 644-42-26</a>
@@ -58,7 +59,7 @@ function NavBar(props){
                           <button
                           onClick={props.handleClick}
                           value='about'
-                          >About</button>
+                          >Sobre mí</button>
                           <button
                           onClick={props.handleClickPor}
                           value='portfolio'
@@ -66,10 +67,9 @@ function NavBar(props){
                           {/* <button>Experiences</button> */}
                     </div>
                           <div className={styles.menu} onClick={handleMenu}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-
+                            <div className={styles.line1}></div>
+                            <div className={styles.line2}></div>
+                            <div className={styles.line3}></div>
                          </div>
                 </div>
             </div>
@@ -81,22 +81,25 @@ function NavBar(props){
                   <button
                   onClick={props.handleClick}
                   value='about'
-                  >About</button>
+                  >Sobre mí</button>
                   <button
                   onClick={props.handleClickPor}
                   value='portfolio'
                   >Portafolio</button>
                 </div>
-
-                <div className={styles.socialMedia}>
-                  <a target="_blank" href="https://www.linkedin.com/in/ngvb/" className={styles.liDiv}><FaLinkedinIn className={styles.iconLinkedin}/></a> 
-                  <a target="_blank" href="https://github.com/gioh2020" className={styles.liDiv}><FaGithub className={styles.gitHub} /></a>
-                  <a target="_blank" href="https://api.whatsapp.com/send?phone=%2B573016444226&text=" className={styles.liDiv}> <FaWhatsapp className={styles.whatsapp}/></a>           
-                </div>
-
-                <div className={styles.divPhone}>
+                
+                <div className={styles.divPhoneMenu}>
                   <a href="tel:+573016444226"><FaPhoneAlt className={styles.iconPhone}/> (+57) 301 644-42-26</a>
                 </div>
+
+                <div className={styles.socialMediaMenu}>
+                  <a target="_blank" href="https://www.linkedin.com/in/ngvb/" className={styles.liDiv}><FaLinkedinIn className={styles.iconLinkedin}/></a> 
+                  <a target="_blank" href="https://github.com/gioh2020" className={styles.liDiv}><FaGithub className={styles.gitHub} /></a>
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=%2B573016444226&text=" className={styles.liDiv}> <FaWhatsapp className={styles.whatsapp}/></a>  
+                  <a target="_blank" href="https://www.instagram.com/gi0h/" className={styles.liDiv}> <FaInstagram className={styles.whatsapp}/></a>           
+                </div>
+
+               
 
               </div> :null
             }

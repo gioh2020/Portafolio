@@ -34,7 +34,7 @@ function About() {
                         <h4>Edad: <span> 31 años</span></h4>
                         <h4>Nacionalidad: <span> Bogotá Colombia</span></h4>
                         <h4>Idiomas: <span> Español / Ingles A1</span></h4>
-                        <h4>Phone: <span> 30164442266</span></h4>
+                        <h4>Teléfono: <span> 30164442266</span></h4>
                         <h4>Email: <span> gioh2020@gmail.com</span></h4>
                     </div>
                     <a href={cv} target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>Download CV <BiDownload className={styles.iconDownLoad}/></a>
