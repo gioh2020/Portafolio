@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./Projects.module.css"
 import ReactPlayer from "react-player";
 import principalImage from "../utilities/image/countries/principal.jpg"
@@ -12,7 +12,8 @@ import cssHtml  from "../utilities/image/imageTec/cssHtml.png"
 import post  from "../utilities/image/imageTec/post.png"
 import sequelize  from "../utilities/image/imageTec/sequelize.png"
 
-import { useSwipeable } from "react-swipeable";
+
+
 
 
 
@@ -39,32 +40,30 @@ function Countries(props) {
             else{setPag(pag+1)}
         }
     }
-    const handleSwipeLeft = () => {
-        if (pag < photosArr.length - 1) {
-          setPag(pag + 1);
+    const startX = useRef(null);
+    const handleTouchStart = (e) => {
+        const touch = e.touches[0];
+        startX.current = touch.clientX;
+      };
+    const handleTouchMove = (e) => {
+        const touch = e.touches[0];
+        const deltaX = touch.clientX - startX.current;
+        if (deltaX > 0) {
+            if(pag===0){ setPag(2) }
+            else{setPag(pag-1)}
+        } else if (deltaX < 0) {
+            if(pag===2){ setPag(0) }
+            else{setPag(pag+1)}
         }
       };
-    
-      const handleSwipeRight = () => {
-        if (pag > 0) {
-          setPag(pag - 1);
-        }
-      };
-    
-      const swipeHandlers = useSwipeable({
-        onSwipedLeft: handleSwipeLeft,
-        onSwipedRight: handleSwipeRight,
-        delta: 50,
-        preventDefaultTouchmoveEvent: true,
-      });
     return(
         <div   className={styles.principalDiv} onClick={props.handleClickClose}>
 
         <div className={styles.popUp} onClick={handleStopClick}  >
             <button onClick={props.handleClickClose} className={styles.closeButton}>X</button>
 
-            <div className={styles.imgContainer} {...swipeHandlers}>
-                <img src={photosArr[pag]} alt="" />
+            <div className={styles.imgContainer} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+                <img src={photosArr[pag] } alt="" />
                 <div className={styles.buttonsContainer}>
 
                 <button onClick={handleClick} value="back">«</button> <span>  </span> <button onClick={handleClick} value="next">»</button>
