@@ -41,17 +41,19 @@ function Countries(props) {
         }
     }
     const startX = useRef(null);
+    const threshold = 20;
     const handleTouchStart = (e) => {
         const touch = e.touches[0];
         startX.current = touch.clientX;
       };
     const handleTouchMove = (e) => {
+
         const touch = e.touches[0];
         const deltaX = touch.clientX - startX.current;
-        if (deltaX > 0) {
+        if (deltaX > threshold) {
             if(pag===0){ setPag(2) }
             else{setPag(pag-1)}
-        } else if (deltaX < 0) {
+        } else if (deltaX < -threshold) {
             if(pag===2){ setPag(0) }
             else{setPag(pag+1)}
         }
