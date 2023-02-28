@@ -12,6 +12,8 @@ import cssHtml  from "../utilities/image/imageTec/cssHtml.png"
 import post  from "../utilities/image/imageTec/post.png"
 import sequelize  from "../utilities/image/imageTec/sequelize.png"
 
+import { useSwipeable } from "react-swipeable";
+
 
 
 
@@ -37,27 +39,31 @@ function Countries(props) {
             else{setPag(pag+1)}
         }
     }
-    function handleSwipeLeft() {
-        if (pag > 0) {
-          setPag(pag - 1);
-        }
-      }
-    
-      function handleSwipeRight() {
+    const handleSwipeLeft = () => {
         if (pag < photosArr.length - 1) {
           setPag(pag + 1);
         }
-      }
- 
-
+      };
+    
+      const handleSwipeRight = () => {
+        if (pag > 0) {
+          setPag(pag - 1);
+        }
+      };
+    
+      const swipeHandlers = useSwipeable({
+        onSwipedLeft: handleSwipeLeft,
+        onSwipedRight: handleSwipeRight,
+        delta: 50,
+        preventDefaultTouchmoveEvent: true,
+      });
     return(
         <div   className={styles.principalDiv} onClick={props.handleClickClose}>
 
         <div className={styles.popUp} onClick={handleStopClick}  >
             <button onClick={props.handleClickClose} className={styles.closeButton}>X</button>
 
-            <div className={styles.imgContainer} onSwipeLeft={handleSwipeLeft}
-      onSwipeRight={handleSwipeRight}>
+            <div className={styles.imgContainer} {...swipeHandlers}>
                 <img src={photosArr[pag]} alt="" />
                 <div className={styles.buttonsContainer}>
 
