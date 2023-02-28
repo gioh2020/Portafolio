@@ -37,6 +37,17 @@ function Countries(props) {
             else{setPag(pag+1)}
         }
     }
+    function handleSwipeLeft() {
+        if (pag > 0) {
+          setPag(pag - 1);
+        }
+      }
+    
+      function handleSwipeRight() {
+        if (pag < photosArr.length - 1) {
+          setPag(pag + 1);
+        }
+      }
  
 
     return(
@@ -45,7 +56,8 @@ function Countries(props) {
         <div className={styles.popUp} onClick={handleStopClick}  >
             <button onClick={props.handleClickClose} className={styles.closeButton}>X</button>
 
-            <div className={styles.imgContainer}>
+            <div className={styles.imgContainer} onSwipeLeft={handleSwipeLeft}
+      onSwipeRight={handleSwipeRight}>
                 <img src={photosArr[pag]} alt="" />
                 <div className={styles.buttonsContainer}>
 
