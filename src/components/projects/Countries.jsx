@@ -41,7 +41,7 @@ function Countries(props) {
         }
     }
     const startX = useRef(null);
-    const threshold = 20;
+    const threshold = 5;
     const handleTouchStart = (e) => {
         const touch = e.touches[0];
         startX.current = touch.clientX;
