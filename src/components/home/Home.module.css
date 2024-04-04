@@ -1,46 +1,24 @@
-/* 
-.principalHome{
-  display: grid;
- grid-template-rows: auto auto auto;
-} */
-.principalDiv{
-    height: 100vh;
-    width: 100%;
-    
-}
-.InfoAndImageContainer{
-  z-index: 2 ;
+.principalHome {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 300px;
-  align-items: center;
-  position: absolute;
-  height: 93vh;
+  flex-direction: column;
+}
+
+.principalDiv {
+  height: 100vh;
   width: 100%;
 
 }
-@media (max-width: 768px) {
-  .InfoAndImageContainer {
-    
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 98%;
-    height: 100%;
-    top: 0px;
-    margin-top: 12vh;
-  }
-}
-@media (max-height: 668px) {
-  .InfoAndImageContainer {
-    margin-top:4vh ;
-    
-  }
+
+.esferasContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
-.hello{
-  z-index: 2 ;
+.hello {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -49,20 +27,23 @@
   margin-right: 30px;
   width: 800px;
 }
+
 @media (max-width: 768px) {
-  .hello{
+  .hello {
     padding: 0px;
     margin-right: 0px;
     width: 100%;
   }
 }
-.hello p{
+
+.hello p {
   width: 100%;
   text-align: start;
   font-size: 20px;
-  color:  var(--color-primario);
+  color: var(--color-primario);
   text-align: justify;
 }
+
 @media (max-width: 768px) {
   .hello p {
     font-size: 17px;
@@ -71,34 +52,39 @@
     margin: 10px 0px 5px 0px;
   }
 }
-.hello h1{
+
+.hello h1 {
   width: 100%;
   text-align: start;
   font-size: 50px;
   margin-bottom: 2px;
   margin-top: 0px;
-  color:  var(--color-primario);
+  color: var(--color-primario);
 }
+
 @media (max-width: 768px) {
   .hello h1 {
     margin-top: 2px;
     font-size: 30px;
   }
 }
-.hello h2{
+
+.hello h2 {
   width: 100%;
   text-align: start;
   font-size: 35px;
   margin-top: 2px;
-  color:  var(--color-primario);
+  color: var(--color-primario);
 }
+
 @media (max-width: 768px) {
   .hello h2 {
     margin-bottom: 10px;
     font-size: 25px;
   }
 }
-.downloadButton{
+
+.downloadButton {
   width: 180px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -113,219 +99,226 @@
   color: white;
   margin-top: 30px;
 }
+
 @media (max-width: 768px) {
-  .downloadButton  {
- margin-top: 20px;
- margin-bottom: 20px;
+  .downloadButton {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
+
 @media (max-height: 668px) {
   .downloadButton {
     display: none;
-    
+
   }
 }
-.downloadButton:hover{
+
+.downloadButton:hover {
   background: #ffb400;
   color: #e5e5e5;
 }
-.iconDownLoad{
+
+.iconDownLoad {
   color: white;
 
 }
-.bannerImg{
+
+.bannerImg {
   width: 550px;
   height: 600px;
   border-radius: 70px;
-  
+
 }
+
 @media (max-width: 768px) {
-  .bannerImg  {
+  .bannerImg {
     position: relative;
     width: 95%;
     height: 85%;
     margin-top: 1%;
-    z-index: -3; 
-   
- 
+    z-index: -3;
   }
 }
-.home{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
+
 @media (max-width: 768px) {
-  .home  {
-   flex-wrap: nowrap;
-   flex-direction: column;
+  .home {
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 }
-.girarContainer1{
- 
+
+.girarContainer1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 24%;
   height: 100%;
-
- 
 }
+
 @media (max-width: 768px) {
-  .girarContainer1  {
-  width: 100%;
-  height: 600px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .girarContainer1 {
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
+
 .girar {
-    /* Establecer un tamaño y posición para el div */
-    width: 100%;
+  /* Establecer un tamaño y posición para el div */
+  width: 100%;
+  height: 200px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 100%;
+
+  /* Añadir la animación y la transformación */
+  animation: girarInfinitamente 25s linear infinite;
+  transform-origin: center;
+}
+
+@media (max-width: 768px) {
+  .girar {
+    width: 200px;
     height: 200px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 100%;
-    
-    /* Añadir la animación y la transformación */
-    animation: girarInfinitamente 25s linear infinite;
-    transform-origin: center;
   }
-  @media (max-width: 768px) {
-    .girar  {
-      width: 200px;
-      height: 200px;
-    }
-  }
-  
-  
-  /* Definir la animación */
-  @keyframes girarInfinitamente {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
-  .girar span::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    width: 0.7rem;
-    height: 0.7rem;
-    background: green;
-    border-radius: 100%;
+}
+
+/* Definir la animación */
+@keyframes girarInfinitamente {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .girar span:nth-child(3n+1):before {
-    background: rgb(134, 255, 0);
-    box-shadow: 0 0 2rem rgb(134, 255, 0), 0 0 2rem rgb(134, 255, 0), 0 0 3rem rgb(134, 255, 0), 0 0 4rem rgb(134, 255, 0), 0 0 0 0.4rem rgba(134, 255, 0, 0.1);
+  100% {
+    transform: rotate(-360deg);
   }
+}
 
+.girar span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: green;
+  border-radius: 100%;
+}
 
+.girar span:nth-child(3n+1):before {
+  background: rgb(134, 255, 0);
+  box-shadow: 0 0 2rem rgb(134, 255, 0), 0 0 2rem rgb(134, 255, 0), 0 0 3rem rgb(134, 255, 0), 0 0 4rem rgb(134, 255, 0), 0 0 0 0.4rem rgba(134, 255, 0, 0.1);
+}
 
+.girarIzq {
+  /* Establecer un tamaño y posición para el div */
+  width: 100%;
+  height: 200px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+
+  /* Añadir la animación y la transformación */
+  animation: girarInfinitamenteizq 40s linear infinite;
+  transform-origin: center;
+}
+
+@media (max-width: 768px) {
   .girarIzq {
-    /* Establecer un tamaño y posición para el div */
-    width: 100%;
-    height: 200px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    z-index: -2;
-    
-    /* Añadir la animación y la transformación */
-    animation: girarInfinitamenteizq 40s linear infinite;
-    transform-origin: center;
+    width: 300px;
+    height: 150px;
   }
-  @media (max-width: 768px) {
-    .girarIzq  {
-      width: 300px;
-      height: 150px;
-    }
-  }
-  
-  /* Definir la animación */
-  @keyframes girarInfinitamenteizq {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+}
+
+/* Definir la animación */
+@keyframes girarInfinitamenteizq {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .girarIzq span::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    width: 0.6rem;
-    height: 0.6rem;
-    background: green;
-    border-radius: 100%;
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.girarIzq span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: green;
+  border-radius: 100%;
+}
+
+.girarIzq span:nth-child(3n+1):before {
+  background: rgb(255, 255, 0);
+  box-shadow: 0 0 1rem rgb(255, 255, 0), 0 0 2rem rgb(255, 255, 0), 0 0 3rem rgb(255, 255, 0), 0 0 4rem rgb(255, 255, 0), 0 0 0 0.4rem rgba(255, 255, 0, 0.1);
+}
+
+
+.girarDer {
+  /* Establecer un tamaño y posición para el div */
+  width: 100%;
+  height: 200px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 100%;
+
+  /* Añadir la animación y la transformación */
+  animation: girarInfinitamente 80s linear infinite;
+  transform-origin: center;
+}
+
+@media (max-width: 768px) {
+  .girarDer {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Definir la animación */
+@keyframes girarInfinitamente {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .girarIzq  span:nth-child(3n+1):before {
-    background: rgb(255, 255, 0);
-    box-shadow: 0 0 1rem rgb(255, 255, 0), 0 0 2rem rgb(255, 255, 0), 0 0 3rem rgb(255, 255, 0), 0 0 4rem rgb(255, 255, 0), 0 0 0 0.4rem rgba(255, 255, 0, 0.1);
-   }
-
-
-   .girarDer {
-    /* Establecer un tamaño y posición para el div */
-    width: 100%;
-    height: 200px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 100%;
-    
-    /* Añadir la animación y la transformación */
-    animation: girarInfinitamente 80s linear infinite;
-    transform-origin: center;
+  100% {
+    transform: rotate(-360deg);
   }
-  @media (max-width: 768px) {
-    .girarDer  {
-      width: 250px;
-      height: 250px;
-    }
-  }
-  
-  /* Definir la animación */
-  @keyframes girarInfinitamente {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
-  .girarDer span::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    width: 0.6rem;
-    height: 0.6rem;
-    background: green;
-    border-radius: 100%;
-  }
+}
 
-  .girarDer span:nth-child(3n+1):before {
-    background: rgb(38, 87, 54);
-    box-shadow: 0 0 1rem rgb(38, 87, 54), 0 0 2rem rgb(38, 87, 54), 0 0 3rem rgb(38, 87, 54), 0 0 4rem rgb(38, 87, 54), 0 0 0 0.4rem rgba(38, 87, 54, 0.1);
-  
-  }
+.girarDer span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: green;
+  border-radius: 100%;
+}
 
-  
+.girarDer span:nth-child(3n+1):before {
+  background: rgb(38, 87, 54);
+  box-shadow: 0 0 1rem rgb(38, 87, 54), 0 0 2rem rgb(38, 87, 54), 0 0 3rem rgb(38, 87, 54), 0 0 4rem rgb(38, 87, 54), 0 0 0 0.4rem rgba(38, 87, 54, 0.1);
 
-  
+}
