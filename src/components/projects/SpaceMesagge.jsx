@@ -8,6 +8,7 @@ import js from "../utilities/image/imageTec/js.png"
 import cssHtml from "../utilities/image/imageTec/cssHtml.png"
 import net from "../utilities/image/imageTec/net.png"
 import angular from "../utilities/image/imageTec/angular.png"
+import angular from "../utilities/image/imageTec/mySql.png"
 
 
 function RickAndMorty(props) {
