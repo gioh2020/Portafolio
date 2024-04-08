@@ -8,7 +8,7 @@ import js from "../utilities/image/imageTec/js.png"
 import cssHtml from "../utilities/image/imageTec/cssHtml.png"
 import net from "../utilities/image/imageTec/net.png"
 import angular from "../utilities/image/imageTec/angular.png"
-import angular from "../utilities/image/imageTec/mySql.png"
+import mysql from "../utilities/image/imageTec/mySql.png"
 
 
 function RickAndMorty(props) {
@@ -56,6 +56,7 @@ function RickAndMorty(props) {
                         <img src={angular} alt=""/>
                         <img src={js} alt=""/>
                         <img src={cssHtml} alt=""/>
+                        <img src={mysql} alt=""/>
                     </div>
                 </div>
 
