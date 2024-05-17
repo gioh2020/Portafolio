@@ -23,7 +23,7 @@ function WorkExperience(props) {
                                 <h5 className={styles.date}>Mar 2023 - Actualidad.</h5>
                             </div>
                             <div className={styles.infoExperience}>
-                                <h2>Asofty - Desarrollador de software JR</h2>
+                                <h2>Asofty - Desarrollador de software</h2>
                                 <ul>
                                     <li>Implementación de funcionalidades de lógica y
                                         diseño en front-end utilizando Angular, TypeScript,
