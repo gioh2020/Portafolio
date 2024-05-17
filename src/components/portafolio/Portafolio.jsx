@@ -13,14 +13,15 @@ import Space from "../projects/SpaceMesagge"
 
 function Portfolio() {
     const [wwWhere, setWwWhere] = useState(false)
+    const [space, setSpace] = useState(false)
     const [rickAndMorty, setRickAndMorty] = useState(false)
     const [countries, setCountries] = useState(false)
     const handleClick = (event) => {
         setWwWhere(true)
 
     }
-    const handleClickCountries = (event) => {
-        setCountries(true)
+    const handleClickSpace = (event) => {
+        setSpace(true)
     }
     const handleClickRickAndMorty = (event) => {
         setRickAndMorty(true)
@@ -30,6 +31,7 @@ function Portfolio() {
         setWwWhere(false)
         setCountries(false)
         setRickAndMorty(false)
+        setSpace(false)
     }
     return (
         <div className={styles.principalDiv}>
@@ -57,8 +59,8 @@ function Portfolio() {
 
                     <div className={styles.projectContainerInfo}>
                         <h2>Msg Intersected</h2>
-                        <img src={principalImageSpace} className={styles.countryImage} name="spaceMesagge" onClick={handleClick} alt="" />
-                        {wwWhere && <Space handleClickClose={handleClickClose} ></Space>}
+                        <img src={principalImageSpace} className={styles.countryImage} name="spaceMesagge" onClick={handleClickSpace} alt="" />
+                        {space && <Space handleClickClose={handleClickClose} ></Space>}
                         <div className={styles.linksContainer}>
                             <a target="_blank" name="spaceMesagge" onClick={handleClick}>  <FaGgCircle fontSize="18px" />  <span>INFO</span></a>
                             <a target="_blank" href="https://github.com/gioh2020/proyectoCSharp"> <FaGithub fontSize="18px" /> <span>GITHUB</span></a>
