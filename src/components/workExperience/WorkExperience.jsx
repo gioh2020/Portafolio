@@ -24,7 +24,7 @@ function WorkExperience(props) {
                             </div>
                             <div className={styles.infoExperience}>
                                 <h2>Asofty - Desarrollador de software</h2>
-                                    <h3>Responsabilidades</h3>
+                                <h3>Responsabilidades</h3>
                                 <ul>
                                     <li>Implementación de funcionalidades de lógica y
                                         diseño en front-end utilizando Angular, TypeScript,
@@ -35,15 +35,16 @@ function WorkExperience(props) {
                                     <li>Participar en reuniones de planificación y revisión de
                                         código, ofreciendo ideas y soluciones técnicas para
                                         mejorar la calidad del software.</li>
-                                    <li>Diseñar e implementar endpoints REST en el
-                                        backend utilizando tecnologías como .NET 6 y C#.</li>
+                                    <li>Diseñar e implementar endpoints en servicios web de tipo REST en el backend utilizando tecnologías como .Net6
+                                        con el lenguaje de programación C#.
+                                    </li>
                                     <li>Liderar la capacitación de nuevos desarrolladores,
                                         con respecto a la infraestructura del proyecto y las
                                         tecnologías a utilizar.</li>
                                 </ul>
-                                    <h3>Logros</h3>
+                                <h3>Logros</h3>
                                 <ul>
-                                    <li>Hice parte del equipo desarrollador para el proyecto Asofty ERP web, con sus respectivos módulos, comercial, administrativo, 
+                                    <li>Hice parte del equipo desarrollador para el proyecto Asofty ERP web, con sus respectivos módulos, comercial, administrativo,
                                         contable entre otros. Desde la etapa de planeación hasta el despliegue a producción.</li>
                                     <li>Desarrollé en un 80% la funcionalidad del componente cotización, y módulo operativo para los negocios logísticos (Marítimo y Aéreo).</li>
                                     <li>En menos de dos meses adquirí el conocimiento en Angular, integrándome rápidamente al equipo FrontEnd.</li>
