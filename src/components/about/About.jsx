@@ -33,7 +33,7 @@ function About() {
                             <h4>Nombre: <span> Nelson Giovanny Vásquez Blanco</span></h4>
                             <h4>Edad: <span> 32 años</span></h4>
                             <h4>Nacionalidad: <span> Bogotá Colombia</span></h4>
-                            <h4>Idiomas: <span> Español / Ingles A2</span></h4>
+                            <h4>Idiomas: <span> Español / Ingles B1</span></h4>
                             <h4>Teléfono: <span> 30164442266</span></h4>
                             <h4>Email: <span> gioh2020@gmail.com</span></h4>
                         </div>
