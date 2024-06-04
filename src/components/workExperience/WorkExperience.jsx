@@ -24,6 +24,7 @@ function WorkExperience(props) {
                             </div>
                             <div className={styles.infoExperience}>
                                 <h2>Asofty - Desarrollador de software</h2>
+                                    <h3>Responsabilidades</h3>
                                 <ul>
                                     <li>Implementación de funcionalidades de lógica y
                                         diseño en front-end utilizando Angular, TypeScript,
@@ -36,17 +37,23 @@ function WorkExperience(props) {
                                         mejorar la calidad del software.</li>
                                     <li>Diseñar e implementar endpoints REST en el
                                         backend utilizando tecnologías como .NET 6 y C#.</li>
-                                    <li>Integrar el frontend con el backend mediante
-                                        llamadas a API, asegurando una comunicación
-                                        eficiente y segura entre ambos.</li>
                                     <li>Liderar la capacitación de nuevos desarrolladores,
                                         con respecto a la infraestructura del proyecto y las
                                         tecnologías a utilizar.</li>
+                                </ul>
+                                    <h3>Logros</h3>
+                                <ul>
+                                    <li>Hice parte del equipo desarrollador para el proyecto Asofty ERP web, con sus respectivos módulos, comercial, administrativo, 
+                                        contable entre otros. Desde la etapa de planeación hasta el despliegue a producción.</li>
+                                    <li>Desarrollé en un 80% la funcionalidad del componente cotización, y módulo operativo para los negocios logísticos (Marítimo y Aéreo).</li>
+                                    <li>En menos de dos meses adquirí el conocimiento en Angular, integrándome rápidamente al equipo FrontEnd.</li>
+                                    <li>En seis meses me capacite de forma autonoma en .NET y MySQL para apoyar de manera efectiva al equipo BackEnd.</li>
                                 </ul>
                                 <div className={styles.tecnologiasContainer}>
                                     <h4 className={styles.tecnologias}>Angular</h4>
                                     <h4 className={styles.tecnologias}>.Net</h4>
                                     <h4 className={styles.tecnologias}>TypeScript</h4>
+                                    <h4 className={styles.tecnologias}>MySql</h4>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +73,7 @@ function WorkExperience(props) {
                                         de mejora, resolución de problemas, gestión de
                                         proyectos. Estas experiencias han sido
                                         fundamentales para mi crecimiento profesional y
-                                        personal.                                     
+                                        personal.
                                     </li>
                                 </ul>
                                 <div className={styles.tecnologiasContainer}>

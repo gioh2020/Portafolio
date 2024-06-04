@@ -78,11 +78,11 @@
     flex-direction: column;
     background-color: white;
   
-    width: 55%;
+    width: 70%;
     margin-top: 15px;
     border-radius: 12px;
     /* box-shadow: 0 0 1rem rgb(83, 84, 82); */
-    padding: 8px 8px 8px 0px;
+    padding: 8px 32px 8px 0px;
 }
 ul{
     text-align: justify;
@@ -113,7 +113,8 @@ ul{
 
 .date{
     width: auto;
-    height: auto;
+    height: 35px;
+    line-height: 31px;
 }
 
 .containerDate{
@@ -179,4 +180,10 @@ ul{
 
     }
     
+  }
+  h3{
+    width: auto;
+ 
+    text-align: start;
+    text-indent: 10px;
   }
